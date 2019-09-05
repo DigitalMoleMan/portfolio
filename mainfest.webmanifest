@@ -1,0 +1,16 @@
+{
+    "short_name": "WP - Portfolio",
+    "name": "Wille Pilquist - Portfolio",
+    "icons": [
+        {
+            "src": "/img/me.png",
+            "type": "image/png",
+            "sizes": "512x512"
+          }
+    ],
+    "start_url": "/maps/?source=pwa",
+  "background_color": "#000",
+  "display": "standalone",
+  "scope": "/maps/",
+  "theme_color": "#848"
+}

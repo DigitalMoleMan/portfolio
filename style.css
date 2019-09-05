@@ -36,6 +36,7 @@ main{
     width: 100%;
     height: fit-content;
     background-color: #848;
+    box-shadow: 0px 5px 5px #00000040;
 }
 
 .logo{
@@ -64,15 +65,7 @@ main{
     display: block;
 }
 
-.section .sectionHeader{
-    position: relative;
-    display: block;
-    margin-top: 0rem; 
-    border-bottom: solid;
-    border-color: #ffffff80;
-    border-width: 1px;
-    color:#fff;
-}
+
 
 .section{
     position: relative;
@@ -81,6 +74,16 @@ main{
     padding: 1rem;
     background-color: #333;
     box-shadow: 0px 5px 5px #00000040;
+}
+
+.section .sectionHeader{
+    position: relative;
+    display: block;
+    margin-top: 0rem; 
+    border-bottom: solid;
+    border-color: #ffffff80;
+    border-width: 1px;
+    color:#fff;
 }
 
 .profile img{
@@ -100,7 +103,7 @@ main{
 .projects{
     position: relative;
     display: grid;
-    grid-auto-columns: auto;
+    grid-template-columns: auto auto;
     grid-auto-rows: auto;
     grid-auto-flow: row;
     grid-column-end: auto;

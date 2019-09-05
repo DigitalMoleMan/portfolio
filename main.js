@@ -1,16 +1,28 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
-
-r = () => Math.random();
-var y = r();
-var x = r();
-var z = r();
-loop = () => {
-    ctx.fillStyle = "rgb(" + x % 255 + "," + y % 255 + "," + z % 255 + ")";
-    ctx.fillRect(((x * 5) + canvas.width / 2) % canvas.width, ((y * 5) + canvas.height / 2) % canvas.height, x, y);
-x += Math.tan(z);
-y += Math.sin(x);
-z += Math.cos(y);
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js', {
+        scope: './'
+    }).then(function (registration) {
+        var serviceWorker;
+        if (registration.installing) {
+            serviceWorker = registration.installing;
+            document.querySelector('#kind').textContent = 'installing';
+        } else if (registration.waiting) {
+            serviceWorker = registration.waiting;
+            document.querySelector('#kind').textContent = 'waiting';
+        } else if (registration.active) {
+            serviceWorker = registration.active;
+            document.querySelector('#kind').textContent = 'active';
+        }
+        if (serviceWorker) {
+            // logState(serviceWorker.state);
+            serviceWorker.addEventListener('statechange', function (e) {
+                // logState(e.target.state);
+            });
+        }
+    }).catch (function (error) {
+        // Something went wrong during registration. The service-worker.js file
+        // might be unavailable or contain a syntax error.
+    });
+} else {
+    // The current browser doesn't support service workers.
 }
-
-setInterval(() => loop(), 1000 / 180);
