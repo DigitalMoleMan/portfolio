@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#848"/>
+    <meta name="theme-color" content="#848" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab:100,300,400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="mainfest.webmanifest">
     <link rel="icon" type="image/webp" href="img/me.webp">
@@ -27,11 +30,18 @@
             <div class="profile">
                 <img src="img/me.webp" alt="photo of me">
                 <span class="info">
-                    <label>Name: </label><a>Wille Pilquist</a><br>
-                    <label>Born: </label><a>2000</a><br>
-                    <label>City of Residence: </label><a>Umeå</a><br>
-                    <label>Programming Languages: </label><a>JavaScript, Java, C#</a><br>
-                    <label>Education: </label><a>Tech Graduate</a>
+                    <span class="row"><a class="name">Wille Pilquist</a></span>
+                    <span class="row"><label>Born: </label><a>2000</a></span>
+                    <span class="row"><label>City of Residence: </label><a>Umeå</a></span>
+                    <span class="row"><label>Programming Languages: </label><a>JavaScript, Java, C#</a></span>
+                    <span class="row"><label>Education: </label><a>Tech Graduate</a></span>
+                    <span class="row"><label>Contact: </label>
+                        <br><a class="link" href="gen.ericsson@gmail.com">gen.ericsson@gmail.com</a>
+                        <br><a class="link" href="555-1234567">555-1234567</a>
+                    </span>
+                </span>
+                <span class="background">
+                    <p></p>
                 </span>
             </div>
         </div>
@@ -92,7 +102,7 @@
             </div>
         </div>
     </main>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
