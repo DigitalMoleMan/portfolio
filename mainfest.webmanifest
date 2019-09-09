@@ -3,8 +3,8 @@
     "name": "Wille Pilquist - Portfolio",
     "icons": [
         {
-            "src": "/img/me.png",
-            "type": "image/png",
+            "src": "/img/me.webp",
+            "type": "image/webp",
             "sizes": "512x512"
           }
     ],
