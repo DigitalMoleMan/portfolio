@@ -2,7 +2,8 @@ const filesToCache = [
   './',
   'style.css',
   'index.html',
-  'service-worker.js'
+  'service-worker.js',
+  'manifest.webmanifest'
 ];
 const staticCacheName = 'wp-portfolio-cache';
 
