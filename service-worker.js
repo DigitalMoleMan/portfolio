@@ -1,21 +1,5 @@
-const filesToCache = [
-  './',
-  'style.css',
-  'index.html',
-  'service-worker.js',
-  'manifest.webmanifest'
-];
-const staticCacheName = 'wp-portfolio-cache';
 
-self.addEventListener('install', event => {
-  console.log('Attempting to install service worker and cache static assets');
-  event.waitUntil(
-    caches.open(staticCacheName)
-      .then(cache => {
-        return cache.addAll(filesToCache);
-      })
-  );
-});
+const staticCacheName = 'wp-portfolio-cache';
 
 self.addEventListener('fetch', event => {
   console.log('Fetch event for ', event.request.url);
