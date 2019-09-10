@@ -1,5 +1,4 @@
 const filesToCache = [
-    '/',
     'style.css',
     'index.html',
     'service-worker.js'
