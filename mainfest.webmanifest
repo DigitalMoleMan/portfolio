@@ -8,9 +8,7 @@
             "sizes": "512x512"
           }
     ],
-    "start_url": "/maps/?source=pwa",
   "background_color": "#000",
   "display": "standalone",
-  "scope": "/maps/",
   "theme_color": "#848"
 }
